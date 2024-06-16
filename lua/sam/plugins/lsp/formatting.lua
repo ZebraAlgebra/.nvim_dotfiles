@@ -19,7 +19,11 @@ return {
         graphql = { "prettier" },
         liquid = { "prettier" },
         lua = { "stylua" },
-        python = { "isort", "black" },
+        tex = { "latexindent" },
+        bib = { "bibtex-tidy" },
+        -- python = { "isort", "black" },
+        -- python = { "autopep8" },
+        python = { "ruff-lsp" },
       },
       format_on_save = {
         lsp_fallback = true,

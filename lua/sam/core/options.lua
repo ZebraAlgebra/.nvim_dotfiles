@@ -1,4 +1,5 @@
 vim.cmd "let g:netrw_liststyle = 3" -- to have easier file explore
+vim.lsp.set_log_level "debug"
 
 local opt = vim.opt -- to type less
 
@@ -13,7 +14,7 @@ opt.expandtab = true
 opt.autoindent = true
 
 -- disable line wrapping
-opt.wrap = false
+opt.wrap = true
 
 -- search settings
 opt.ignorecase = true

@@ -9,10 +9,6 @@ return {
     vim.g.loaded_netrwPlugin = 1
 
     nvimtree.setup {
-      view = {
-        width = 35,
-        relativenumber = true,
-      },
       -- change folder arrow icons
       renderer = {
         root_folder_label = ":t",
@@ -46,6 +42,8 @@ return {
       },
       view = {
         side = "right",
+        width = 35,
+        relativenumber = true,
       },
     }
 
