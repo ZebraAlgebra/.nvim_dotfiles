@@ -80,4 +80,16 @@ return {
       }
     )
   ),
+  s(
+    { trig = "p", desr = "Paragraph" },
+    fmta(
+      [[
+    \paragraph{<>}
+
+    ]],
+      {
+        i(1, "paragraph title"),
+      }
+    )
+  ),
 }

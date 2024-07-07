@@ -36,4 +36,61 @@ return {
       i(2, "name"),
     })
   ),
+  -- frac
+  s(
+    { trig = "frac", desr = "Boilerplate for fraction" },
+    fmta([[\frac{<>}{<>}]], {
+      i(1, "numer"),
+      i(2, "denom"),
+    })
+  ),
+  -- tables
+  s(
+    { trig = "tabular", desr = "Tabular boileterplate" },
+    fmta(
+      [[
+      \begin{center}
+        \begin{tabular}{|l|l|l|<>}
+        \hline
+        &&<>\\
+        \end{tabular}
+      \end{center}
+
+    ]],
+      {
+        i(1),
+        i(2),
+      }
+    )
+  ),
+  -- align
+  s(
+    { trig = "align", desr = "Align environment" },
+    fmta(
+      [[
+      \begin{align}
+      <>&\\
+      \end{align}
+
+    ]],
+      {
+        i(1),
+      }
+    )
+  ),
+  -- align*
+  s(
+    { trig = "align*", desr = "Align environment" },
+    fmta(
+      [[
+      \begin{align*}
+      <>&\\
+      \end{align*}
+
+    ]],
+      {
+        i(1),
+      }
+    )
+  ),
 }
