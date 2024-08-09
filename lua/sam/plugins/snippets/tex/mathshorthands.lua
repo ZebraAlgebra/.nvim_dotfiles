@@ -11,6 +11,17 @@ local rep = require("luasnip.extras").rep
 
 return {
   s(
+    { trig = "mscr", desr = "mathscr" },
+    fmta(
+      [[
+      \mathscr{<>}
+    ]],
+      {
+        i(1),
+      }
+    )
+  ),
+  s(
     { trig = "mbb", desr = "mathbb" },
     fmta(
       [[
@@ -51,6 +62,41 @@ return {
     ]],
       {
         i(1, "condition"),
+      }
+    )
+  ),
+  s(
+    { trig = "minf", desr = "infimum" },
+    fmta(
+      [[
+      \underset{<>}{\operatorname{inf}}
+    ]],
+      {
+        i(1, "condition"),
+      }
+    )
+  ),
+  s(
+    { trig = "msup", desr = "supremum" },
+    fmta(
+      [[
+      \underset{<>}{\operatorname{sup}}
+    ]],
+      {
+        i(1, "condition"),
+      }
+    )
+  ),
+  -- custom weird commands to sometimes use
+  s({ trig = "c-ext-r", desr = "extended real line" }, { t "\\overline{\\mathbb{R}}" }),
+  s(
+    { trig = "c-set", desr = "set wrapper" },
+    fmta(
+      [[
+      \{<>\}
+    ]],
+      {
+        i(1),
       }
     )
   ),

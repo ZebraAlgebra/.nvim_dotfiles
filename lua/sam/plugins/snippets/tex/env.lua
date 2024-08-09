@@ -12,6 +12,19 @@ local rep = require("luasnip.extras").rep
 return {
   -- figure generation
   s(
+    { trig = "enumm", dscr = "Enumerate with more control" },
+    fmta(
+      [[
+        \begin{enumerate}[label=(\<>*)]
+          \item <>
+        \end{enumerate}
+      ]],
+      { i(1), i(2) },
+      { delimiters = "<>" }
+    )
+  ),
+  -- figure generation
+  s(
     { trig = "fig", dscr = "Boilerplate for embedding figures" },
     fmta(
       [[
